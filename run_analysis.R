@@ -55,8 +55,9 @@ process_y_data <- function(path_to_y) {
     df <- import_data(path_to_y, col.names = c("activity"))
     activities <- import_data(path_to_activity_labels)
     df$activity %>% factor(
-        levels = activities[[1]], labels = tolower(activities[[2]])
+        ., levels = activities[[1]], labels = tolower(activities[[2]])
     )
+    df
 }
 
 ## function to process the subject data
@@ -73,7 +74,7 @@ join_X_y_subject <- function(X, y, subject) {
 ## function to join the training and test
 join_train_and_test_data <- function(test, train) {
     rbind(test, train) %>%
-        arrange( subject, activity)
+        arrange(subject, activity)
 }
 
 ## Putting it all together
@@ -103,7 +104,7 @@ summary_dataset <- complete_dataset %>%
     summarise(across(tbodyacc_mean_x:fbodybodygyrojerkmag_std, mean))
 
 # write the tidy dataset to csv file
-write.csv(summary_dataset, file = "./tidy_dataset.csv")
+write.table(summary_dataset, file = "./tidy_dataset.txt", row.names = FALSE)
 
 # clean up the environment
 rm(list = c(

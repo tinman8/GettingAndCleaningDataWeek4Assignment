@@ -1,13 +1,13 @@
 # The Data
 The data used within this script is originally from the [UCI HAR Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#).
-There are two output datasets, one stored outputted to a csv file called
-"tidy_dataset.csv" and the other as a variable within R call 'complete_datset'.
+There are two output datasets, one stored outputted to a txt file called
+"tidy_dataset.txt" and the other as a variable within R call 'complete_datset'.
 
 The `complete_dataset` is simply the merged training and test datasets,
 with both the X, y, and subject data included. The variables are formatted, and
 the activity data is made into a factor variable.
 
-The "tidy_dataset.csv" is a dataset that starts with the `complete_dataset`, and 
+The "tidy_dataset.txt" is a dataset that starts with the `complete_dataset`, and 
 summaries it, grouping the activities and subjects, and averaging the remaining 
 variables.
 

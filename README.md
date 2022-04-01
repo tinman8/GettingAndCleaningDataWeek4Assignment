@@ -19,6 +19,6 @@ There is a single file within the repo that is used to complete the analysis of 
 
 7.  Using `complete_dataset` a summary dataset is created that groups by the activity and subject, then takes the average of the remaining variables.
 
-8.  The summary dataset is written to a CSV file called "tidy_dataset.csv"
+8.  The summary dataset is written to a txt file called "tidy_dataset.txt"
 
 9.  Finally, the larger objects are removed from the environment to free memory.
