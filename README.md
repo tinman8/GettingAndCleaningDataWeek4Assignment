@@ -1,4 +1,4 @@
-There is a single file within the repo that is used to complete the analysis of the UCI HAR Dataset: `analysis.r`. Refer to \`CodeBook.md\` for the output of this script. The process that is completed in this script is as follows:
+There is a single file within the repo that is used to complete the analysis of the UCI HAR Dataset: `run_analysis.r`. Refer to \`CodeBook.md\` for the output of this script. The process that is completed in this script is as follows:
 
 1.  Checks if the data already exists, and if not, downloads the dataset and saves to a directory labeled "data".
 
